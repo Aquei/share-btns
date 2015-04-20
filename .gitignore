@@ -1,0 +1,4 @@
+# vimが作るファイル
+*~
+*.swp
+node_modules

@@ -1,0 +1,33 @@
+<link href="https://www.srytk.com/h/wc/svg/icon-twitter/icon-twitter.html" rel="import" class="icon"><link href="https://www.srytk.com/h/wc/svg/icon-facebook/icon-facebook.html" rel="import" class="icon"><link href="https://www.srytk.com/h/wc/svg/icon-hatanabookmark-logo-monocolor/icon-hatanabookmark-logo-monocolor.html" rel="import" class="icon"><link href="https://www.srytk.com/h/wc/svg/icon-googleplus/icon-googleplus.html" rel="import" class="icon"><link href="https://www.srytk.com/h/wc/svg/icon-line/icon-line.html" rel="import" class="icon"><link href="https://www.srytk.com/h/wc/normalize/normalize.html" rel="import" class="normalize"><template class="core"><style>
+		/* style */
+		.share-btns svg{
+			width:1em;
+			/* height:0.8em; */
+		}
+
+		.share-btns ul{
+			list-style-type:none;
+		}
+
+		.share-btns a{
+			display:inline-block;
+		}
+
+		.share-btns li{
+			background-color:transparent;
+		}
+
+		.share-btns li div>a{
+			display:-webkit-flex;
+			display:flex;
+			flex-flow:row nowrap;
+		}
+
+		share-btns>svg{
+			display:none;
+		}
+		:host>svg{
+			display:none;
+		}
+
+	</style><div class="container share-btns" itemscope itemtype="http://schema.org/UserInteraction"><ul></ul></div></template><template class="twitter"><div class="twitter" itemscope itemtype="http://schema.org/UserTweets"><a itemprop="url"><svg viewbox="0 0 1024 1024"></svg><span itemprop="name">twitterでシェア</span></a></div></template><template class="facebook"><div class="facebook" itemscope itemtype="http://schema.org/UserLikes"><a itemprop="url"><svg viewbox="0 0 1024 1024"></svg><span itemprop="name">facebookでシェア</span></a></div></template><template class="hatena"><div class="hatena" itemscope itemtype="http://schema.org/UserPageVisits"><a itemprop="http://schema.org/discussionUrl url"><svg viewbox="50 50 200 200"></svg><span itemprop="name">はてなブックマークでシェア</span></a></div></template><template class="google"><div class="google" itemscope itemtype="http://schema.org/UserPlusOnes"><a itemprop="url"><svg viewbox="0 0 1024 1024"></svg><span itemprop="name">Google+でシェア</span></a></div></template><template class="line"><div class="line" itemscope itemtype="http://schema.org/UserLikes"><a itemprop="url"><svg viewbox="28 30 232 232"></svg><span itemprop="name">LINEで送る</span></a></div></template><script src="share-btns.min.js"></script>
