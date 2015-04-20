@@ -26,7 +26,12 @@
 
 	var od = (d._currentScript || d.currentScript).ownerDocument;
 	var prt = Object.create(HTMLElement.prototype);
-	var pageUrl = d.querySelector("head link[rel='canonical']").getAttribute("href") || d.URL;
+	var pageUrl = d.querySelector("head link[rel='canonical']");
+	if(pageUrl){
+		pageUrl = pageUrl.getAttribute("href");
+	}else{
+		pageUrl = d.URL;
+	}
 	var text = 'test text';
 
 	prt.createdCallback = function(){
